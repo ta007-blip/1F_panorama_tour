@@ -32,7 +32,7 @@
       display: flex;
       gap: 8px;
       max-width: calc(100vw - 24px);
-      max-height: 48px;
+      
       padding: 8px;
       overflow-x: auto;
       overflow-y: hidden;
@@ -43,13 +43,13 @@
 
     .scene-button {
       flex: 0 0 auto;
-      min-width: 72px;
-      padding: 6px 8px;
+      min-width: 90px;
+      padding: 8px 10px;
       border: 1px solid rgba(255,255,255,.65);
       border-radius: 7px;
       background: rgba(30,30,30,.86);
       color: #fff;
-      font-size: 10px;
+      font-size: 12px;
       cursor: pointer;
       white-space: nowrap;
     }
@@ -65,7 +65,7 @@
       z-index: 30;
       top: 18px;
       right: 18px;
-      width: clamp(150px, 12vw, 190px);
+      width: clamp(180px, 16vw, 230px);
       padding: 8px;
       background: rgba(255,255,255,.94);
       border-radius: 10px;
@@ -82,14 +82,14 @@
 
     .floorplan-title {
       margin: 0;
-      font-size: 9px;
+      font-size: 11px;
       font-weight: 700;
       color: #111;
     }
 
     .floorplan-current {
       margin: 0;
-      font-size: 8px;
+      font-size: 9px;
       color: #444;
       text-align: right;
       overflow-wrap: anywhere;
@@ -99,7 +99,6 @@
       position: relative;
       width: 100%;
       aspect-ratio: 885 / 745;
-      max-height: 34vh;
       overflow: hidden;
       border: 1px solid #d0d0d0;
       border-radius: 6px;
@@ -113,7 +112,6 @@
       width: 100%;
       height: 100%;
       object-fit: fill;
-      max-height: 34vh;
     }
 
     /* Floorplan already contains labels, so show only a yellow ring */
@@ -160,14 +158,14 @@
       .floorplan-panel {
         top: 10px;
         right: 10px;
-        width: clamp(140px, 20vw, 175px);
+        width: clamp(160px, 24vw, 210px);
         padding: 7px;
       }
 
       .scene-button {
-        min-width: 68px;
-        padding: 6px 7px;
-        font-size: 9px;
+        min-width: 84px;
+        padding: 7px 9px;
+        font-size: 11px;
       }
 
       .plan-marker {
@@ -177,14 +175,11 @@
     }
     @media (min-aspect-ratio: 4/3) {
       .floorplan-panel {
-        width: clamp(145px, 11vw, 180px);
+        width: clamp(170px, 14vw, 210px);
       }
       .scene-button {
-        min-width: 66px;
-        font-size: 9px;
-      }
-      .scene-menu {
-        gap: 6px;
+        min-width: 82px;
+        font-size: 11px;
       }
     }
 
